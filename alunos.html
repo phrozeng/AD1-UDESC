@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Cadastro Alunos</title>
+</head>
+<body>
+    <script language="JavaScript">
+        // Função para exibir os dados do formulário
+        function Enviar(form) {
+            saida = " <h1>Exibindo os Dados do Aluno:</h1>";
+            saida = saida + "<br>alunoid: " + form.alunoid.value;
+            saida = saida + "<br>Nome: " + form.nome.value;
+            saida = saida + "<br>CPF: " + form.CPF.value;
+            document.write(saida);
+        }
+        // Função para verificar se um campo está vazio
+        function eVazio(_str) {
+            if (_str == null || _str == "")
+                return true;
+            return false;
+        }
+        // Função para validar os dados do formulário
+        function validar(form) {
+            if (eVazio(form.alunoid.value)) {
+                alert('alunoid deve ter um valor');
+                return false;
+            }
+            if (eVazio(form.nome.value)) {
+                alert('Nome deve ter um valor');
+                return false;
+            }
+            //Se os campos foram preenchidos corretamente, chama a função Enviar
+            Enviar(form);
+            return true;
+        } 
+    </script>
+    <h1>Dados do Aluno</h1>
+    <form name="FrmCadastroAluno" method="post" action="">
+        <table>        
+        <tr>
+            <td>Alunoid:</td> <td><input type=text name="alunoid" size=10 maxlength=10></td> 
+        </tr>
+        <tr>
+            <td>Nome: </td> <td><input type=text name="nome" size=50 maxlength=40></td>
+        </tr>
+        <tr>
+            <td>CPF:</td> <td><input type=text name="CPF" size=20 maxlength=15></td>
+        </tr> 
+        <tr>
+            <td>Responsavel:</td> <td><input type=text name="responsavel" size=50 maxlength=40></td>
+        </tr> 
+        <tr>
+            <td>Turma:</td> <td><input type=text name="turma" size=10 maxlength=10></td>
+        </tr> 
+        <tr>
+            <td><br>
+                <input type="reset" value="Limpar">
+                <input type="button" name="Cadastrar" value="Cadastrar" onClick="return validar(this.form); ">
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+*{
+margin:0px; 
+padding:0px;
+text-align:left;
+background: #c0c0c0cb;
+}
+a{
+font-family:arial;
+ font-size: 14px;
+}
+header{
+    text-align: center;
+    background: #ffffff;
+    margin:0 auto;
+    width:1000px; 
+    height:70px;
+}
+h1{
+    text-align: center;
+}
+ /* section centro */
+section#centro {
+width:1000px;
+height:800px;
+margin:0 auto;
+border-left: solid #c0c0c0 1px;
+border-right: solid #c0c0c0 1px;
+}
+
+/* section menu */
+section#menu { 
+height:800px;
+width:200px;
+background-color: #fff;
+float: left;
+}
+section#menu nav {
+padding-bottom: 15px;
+}
+section#menu nav h4 {
+width:100%;
+background-color: darkgrey; 
+color:#fff;
+padding-top:5px;
+padding-bottom: 5px;
+}
+section#menu nav ul {
+padding-left: 10px;
+padding-top: 7px;
+list-style-type: none;
+}
+
+section#menu nav ul li{
+padding-left: 10px;
+text-align: left;
+line-height: 1.5
+}
+/* section artigos */
+section#artigos {
+height:800px;
+width:648px;
+background-color: #fff;
+float:left;
+border-left: solid #c0c0c0 1px; border-right: solid #c0c0c0 1px;
+} 
+p{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}

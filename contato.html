@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+<title>Formulário de Cadastro</title>
+</head>
+<body>
+<form method="post" action="confirmar_dados.html" name="formCadastro" />
+<h1>Cadastro para contato</h1>
+<table>
+<tr>
+	<td>Nome:</td><td><input maxlength="50" size="50" name="nome"/> </td>
+</tr>
+<tr>
+	<td>Endereço:</td><td><input maxlength="50" size="50" name="endereco" /><input maxlength="8" size="8" name="numero" /> </td>
+</tr>
+<tr>
+	<td>Bairro:</td><td><input maxlength="40" size="40" name="bairro" /> </td>
+</tr>
+<tr>
+	<td>Cidade:</td><td> <input maxlength="40" size="40" name="cidade" /> </td>
+</tr>
+<tr>
+	<td>Estado:</td><td>
+		<select name="estado">
+		<option value="AC">Acre</option>
+		<option value="AL">Alagoas</option>
+		<option value="AM">Amazonas</option>
+		<option value="AP">Amapá</option>
+		<option value="BA">Bahia</option>
+		<option value="CE">Ceará</option>
+		<option value="DF">Distrito Federal</option>
+		<option value="ES">Espírito Santo</option>
+		<option value="GO">Goiás</option>
+		<option value="MA">Maranhão</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="MS">Mato Grosso do Sul</option>
+		<option value="MT">Mato Grosso</option>
+		<option value="PA">Pará</option>
+		<option value="PB">Paraíba</option>
+		<option value="PE">Pernambuco</option>
+		<option value="PI">Piauí</option>
+		<option value="PR">Paraná</option>
+		<option value="RJ">Rio de Janeiro</option>
+		<option value="RN">Rio Grande do Norte</option>
+		<option value="RO">Rondônia</option>
+		<option value="RR">Roraima</option>
+		<option value="RS">Rio Grande do Sul</option>
+		<option value="SC">Santa Catarina</option>
+		<option value="SE">Sergipe</option>
+		<option value="SP">São Paulo</option>
+		<option value="TO">Tocantins</option>
+		</select> </td>
+</tr>
+<tr>
+	<td>Telefone:</td><td> <input maxlength="20" size="20" name="telefone" /> </td>
+</tr>
+<tr>
+	<td>Sexo:</td><td> <input type="radio" name="sexo" value="M" />Masculino
+		<input type="radio" name="sexo" value="F" />Feminino </td>
+</tr>
+<tr>
+	<td>Comentarios/Dúvidas:</td><td><textarea name="Comentarios"></textarea> </td>
+</tr>
+<tr>
+	<td><input name="enviar" value="Enviar" type="submit" />&nbsp;
+		<input name="limpar" value="Limpar" type="reset" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
